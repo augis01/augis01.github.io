@@ -1,0 +1,19 @@
+{
+  "id": "ID",
+  "contactId": "Kontakt-ID",
+  "orderSummaries": "Auftragsübersicht",
+  "orders": "Aufträge",
+  "notPaidOrdersShort": "Unbez. Aufträge",
+  "notPaidOrders": "Unbezahlte Aufträge",
+  "notPaidOrdersSummaryShort": "Σ unbez. Aufträge",
+  "notPaidOrdersSummary": "Gesamtsumme unbezahlter Aufträge",
+  "createdAt": "Erstellt am",
+  "updatedAt": "Aktualisiert am",
+  "add": "Hinzufügen",
+  "cancel": "Abbrechen",
+  "delete": "Löschen",
+  "entry1": "Eintrag 1",
+  "entry2": "Eintrag 2",
+  "entry3": "Eintrag 3",
+  "rowClicked": "Tabellenzeile mit ID {{rowId}} geklickt."
+}

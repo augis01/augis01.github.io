@@ -1,0 +1,19 @@
+{
+  "id": "ID",
+  "contactId": "Contact ID",
+  "orderSummaries": "Order summary",
+  "orders": "Orders",
+  "notPaidOrdersShort": "Unp. orders",
+  "notPaidOrders": "Unpaid orders",
+  "notPaidOrdersSummaryShort": "Σ unp. orders",
+  "notPaidOrdersSummary": "Total sum of unpaid orders",
+  "createdAt": "Created at",
+  "updatedAt": "Updated at",
+  "add": "Add",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "entry1": "Entry 1",
+  "entry2": "Entry 2",
+  "entry3": "Entry 3",
+  "rowClicked": "Table row with ID {{rowId}} clicked."
+}
