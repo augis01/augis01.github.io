@@ -4,234 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSGO:SCAM | HOME</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@400;500&family=Smooch+Sans&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <title>CagedSteel - Home</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+
+    <meta name="theme-color" content="#6e3be6">
+    <meta name="mobile-web-app-capable" content="no">
+    <meta property="og:title" content="Open cases and earn skins on Caged-Steel | Cage-Steel">
+    <meta property="og:site_name" content="Cage-Steel">
+    <meta property="og:url" content="https://cheeteau.github.io/Caged-Steel/">
+    <meta property="og:description" content="Caged-Steel is a FAKE cs:go case opening website. You can't put money on it, you can't withdraw skins. It's just a site made for fun. It is not affilied with valve, and it will never ask for your ids.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/favicon.png">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/main.js" defer type="module"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="header-border">
-            <div class="logo"><h3 class="CSGO">CSGO:SCAM</h3></div>
-            <div class="header-mid">
-               
-                <a href=""><h3>Daily</h3></a>
-                <a href=""><h3>Rewards</h3></a>
-                <a href=""><h3>Inventory</h3></a>
-                
-            </div>
-            <div class="header-right">
-                <div class="balance-box">
-                    <button class="balance"><img src="./wallet2 1.svg" alt=""></button>
-                      <h3>Balance : 19$</h3>
+    <main>
+        <header>
+            <ul class="navbar">
+                <li class="title">CAGED-STEEL</li>
+
+                <div class="not_logged">
+                    <li class="button" id="login">CONNECT WITH STEAM</li>
                 </div>
-                <div class="login"><button class="login-button"><a href="./login.html"><img src="./Vector.svg" alt=""></a></button></div>
-            </div>
-        </div>
-        
-    </div>
-    <hr>
-    
-    <div class="gamemodes">
-        <div class="gamemode"><a href=""><h3>Roulette</h3></a></div>
-        <div class="gamemode"><a href=""><h3>Crash</h3></a></div>
-        <div class="gamemode"><a href=""><h3>Upgrade</h3></a></div>
-        <div class="gamemode"><a href=""><h3>Coinflip</h3></a></div>
-        <div class="gamemode"><a href=""><h3>Cases</h3></a></div>
-    </div>
-    <div class="content-box">
-        <div class="winners">
-            <hr>
-            <div class="winners-title"><h3>Latest wins:</h3></div>
-            <hr>
-            <div class="winners-margin">
-             
-            <div class="wins">
-            <div class="win-box">
-                <div class="username-status">
-                    <h3 class="username">Gigi</h3>
-                    <h3 class="status">FN</h3>
+                <div class="logged">
+                    <li class="button" id="openProfile">
+                        <div class="avatar"></div>
+                        <span class="balance"><span id="money">0</span>€</span>
+                    </li>
                 </div>
-                <img src="./360fx360f.png" alt="">
-                <h3 class="skin-name">USP-S | CORTEX</h3>
-            </div>
-            <div class="win-box">
-                <div class="username-status">
-                    <h3 class="username">Gigi</h3>
-                    <h3 class="status">FN</h3>
-                </div>
-                <img src="./360fx360f.png" alt="">
-                <h3 class="skin-name">USP-S | CORTEX</h3>
-            </div>
-            <div class="win-box">
-                <div class="username-status">
-                    <h3 class="username">Gigi</h3>
-                    <h3 class="status">FN</h3>
-                </div>
-                <img src="./360fx360f.png" alt="">
-                <h3 class="skin-name">USP-S | CORTEX</h3>
-            </div>
-            <div class="win-box">
-                <div class="username-status">
-                    <h3 class="username">Gigi</h3>
-                    <h3 class="status">FN</h3>
-                </div>
-                <img src="./360fx360f.png" alt="">
-                <h3 class="skin-name">USP-S | CORTEX</h3>
-            </div>
-            <div class="win-box">
-                <div class="username-status">
-                    <h3 class="username">Gigi</h3>
-                    <h3 class="status">FN</h3>
-                </div>
-                <img src="./360fx360f.png" alt="">
-                <h3 class="skin-name">USP-S | CORTEX</h3>
-            </div>
-            <div class="win-box">
-                <div class="username-status">
-                    <h3 class="username">Gigi</h3>
-                    <h3 class="status">FN</h3>
-                </div>
-                <img src="./360fx360f.png" alt="">
-                <h3 class="skin-name">USP-S | CORTEX</h3>
-            </div>
-            </div></div>
-        </div>
-        <div class="main-content">
-            <div class="main-content-margin">
-            <div class="first-container">
-                <div class="tit"><h3>CASE OPENING:</h3></div>
-                <div class="box-container">
-                    <div class="subtitle"><h3>CSGO CASES:</h3></div>
-                    <div class="cases">
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
+            </ul>
+        </header>
+
+        <section id="mainSite">
+            <aside>
+                <!-- Random Opened Cases -->
+                <ul id="ROC"></ul>
+            </aside>
+
+            <article>
+                <section id="mainPage">
+                    <div class="container" id="casesContainer"></div>
+                </section>
+
+                <section class="noDisplay" id="openCase">
+                    <header>
+                        <i class="zmdi zmdi-close" id="closeCase"></i>
+                        <i class="zmdi zmdi-boat" style="opacity: 0;"></i> <!--  MrBoat -->
+                    </header>
+                    <div class="container">
+                        <div id="spinningMachine">
+                            <div id="spinner"></div>
+                            <button id="openCaseButton">Open case <span id="price"></span></button>
                         </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                    
-                </div>
-                </div>
-            </div>
-            <div class="second-container">
-                <div class="tit"><h3>CASE OPENING:</h3></div>
-                <div class="box-container">
-                    <div class="subtitle"><h3>CSGO CASES 2:</h3></div>
-                    <div class="cases">
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                        <div class="case">
-                            <a href="">
-                            <div class="imgbox">
-                            <img src="./256fx256f.png" alt=""></div>
-                            <div class="name-price">
-                                <h3>Nightmare Case</h3>
-                                <h3>4 $</h3>
-                            </div></a>
-                        </div>
-                  
-                    
-                    <div class="case">
-                        <a href="">
-                        <div class="imgbox">
-                        <img src="./256fx256f.png" alt=""></div>
-                        <div class="name-price">
-                            <h3>Nightmare Case</h3>
-                            <h3>4 $</h3>
-                        </div></a>
                     </div>
-                    <div class="case">
-                        <a href="">
-                        <div class="imgbox">
-                        <img src="./256fx256f.png" alt=""></div>
-                        <div class="name-price">
-                            <h3>Nightmare Case</h3>
-                            <h3>4 $</h3>
-                        </div></a>
+                    <div class="sub-container">
+                        <h3>Case content</h3>
+                        <div id="caseContent"></div>
                     </div>
-                    <div class="case">
-                        <a href="">
-                        <div class="imgbox">
-                        <img src="./256fx256f.png" alt=""></div>
-                        <div class="name-price">
-                            <h3>Nightmare Case</h3>
-                            <h3>4 $</h3>
-                        </div></a>
+                </section>
+
+                <section class="noDisplay" id="inventory">
+                    <header><i class="zmdi zmdi-close" id="closeProfile"></i></header>
+                    <button id="logout">Logout</button>
+                    <div class="container">
+                        <div class="addMoney">
+                            <span>Add Money to your account with <button disabled>Paypal <i class="zmdi zmdi-paypal-alt"></i></button> <button disabled>Credit Card <i class="zmdi zmdi-card"></i></button> <button disabled>Crypto <i class="zmdi zmdi-money"></i></button></span>
+                            <span>Or use a code <input type="text" placeholder="Redeem a code to earn money" id="codeInput"> <button id="redeem">Validate</button> - (Here's a <a href="https://pastebin.com/hs0yuzft">list</a> with promocodes 👍)</span>
+                        </div>
+                        <hr>
+                        <h1>Your skins</h1>
+                        <span>Due to Steam policy, you can't withdraw your skins until 7 days.</span>
+                        <div id="skins"></div>
                     </div>
-                </div>
-                </div>
-            </div>
-            <footer>
-                
-            </footer>
-        </div>
-</div>
-    </div>
+                </section>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

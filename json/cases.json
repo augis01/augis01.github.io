@@ -1,0 +1,139 @@
+{
+    "__comment": "Ne jamais faire de case à deux items pour X raison (Fait bugger le script donc bon, tant pis)",
+    "cases": [
+        {
+            "name": "Purple Flames",
+            "price": "0.70",
+            "content": [
+                {
+                    "weapon": "FAMAS",
+                    "skin": "Decommissioned",
+                    "chances": 75
+                },
+                {
+                    "weapon": "AK-47",
+                    "skin": "Safari_Mesh",
+                    "chances": 15
+                },
+                {
+                    "weapon": "Galil_AR",
+                    "skin": "Crimson_Tsunami",
+                    "chances": 5
+                },
+                {
+                    "weapon": "M4A4",
+                    "skin": "Cyber_Security",
+                    "chances": 3
+                },
+                {
+                    "weapon": "Glock-18",
+                    "skin": "Neo-Noir",
+                    "chances": 1
+                },
+                {
+                    "weapon": "AK-47",
+                    "skin": "Neon_Rider",
+                    "chances": 1
+                }
+            ]
+        },
+        {
+            "name": "Fade",
+            "price": "3.75",
+            "content": [
+                {
+                    "weapon": "Sawed-Off",
+                    "skin": "Amber_Fade",
+                    "chances": 43
+                },
+                {
+                    "weapon": "SSG_08",
+                    "skin": "Acid_Fade",
+                    "chances": 40
+                },
+                {
+                    "weapon": "M4A1-S",
+                    "skin": "Nitro",
+                    "chances": 15
+                },
+                {
+                    "weapon": "knives/navaja",
+                    "skin": "fade",
+                    "chances": 1
+                },
+                {
+                    "weapon": "AWP",
+                    "skin": "Fade",
+                    "chances": 1
+                }
+            ]
+        },
+        {
+            "name": "Premium",
+            "price": "5.40",
+            "content": [
+                {
+                    "weapon": "P90",
+                    "skin": "Elite Build",
+                    "chances": 67
+                },
+                {
+                    "weapon": "M4A4",
+                    "skin": "Dark Blossom",
+                    "chances": 25
+                },
+                {
+                    "weapon": "USP-S",
+                    "skin": "Overgrowth",
+                    "chances": 6
+                },
+                {
+                "weapon": "AK-47",
+                    "skin": "Case Hardened",
+                    "chances": 1
+                },
+                {
+                    "weapon": "knives/bayonet",
+                    "skin": "lore",
+                    "chances": 1
+                }
+            ]
+        },
+        {
+            "name": "Hallucinations",
+            "price": "8.35",
+            "content": [
+                {
+                    "weapon": "SSG_08",
+                    "skin": "Fever_Dream",
+                    "chances": 44
+                },
+                {
+                    "weapon": "Desert_Eagle",
+                    "skin": "Light_Rail",
+                    "chances": 40
+                },
+                {
+                    "weapon": "Sawed-Off",
+                    "skin": "Devourer",
+                    "chances": 10
+                },
+                {
+                    "weapon": "P90",
+                    "skin": "Asiimov",
+                    "chances": 3
+                },
+                {
+                    "weapon": "M4A4",
+                    "skin": "Neo_Noir",
+                    "chances": 2
+                },
+                {
+                    "weapon": "knives/karambit",
+                    "skin": "ultraviolet",
+                    "chances": 1
+                }
+            ]
+        }
+    ]
+}
