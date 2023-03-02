@@ -1,0 +1,290 @@
+$base-color:rgba(36, 34, 43, 1);
+$secondary-color:rgba(22, 25, 29, 1);
+$third-color:rgb(17, 17, 20);
+$gradient-color1:linear-gradient(90deg, rgba(92,9,121,1) 0%, rgba(0,255,175,1) 100%);
+$gradient-color2:linear-gradient(90deg, rgba(128,0,255,1) 0%, rgba(0,255,106,1) 100%);
+$gradient-color3:linear-gradient(90deg, rgba(214,0,255,1) 0%, rgba(0,255,106,1) 100%);
+$gradient-color4:linear-gradient(150deg, rgba(170, 31, 255, 1) 20%,rgb(0, 252, 84) 85%);
+$font:'Oswald', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(36, 34, 43, 1);
+        font-family: $font;
+        
+
+       
+}
+
+html{
+    
+    
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color:$third-color;
+    height: 8vh;
+
+}
+
+
+hr {
+    background: $gradient-color1;
+    height: 2px;
+    border: 0;
+}
+
+.header-border {
+    display: flex;
+    margin: auto;
+    margin: 0 2% ;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    gap: 10px;
+
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.header-mid {
+    display: flex;
+    justify-content: space-between;
+gap: 40px;
+    
+}
+
+.CSGO {
+    font-size: clamp(0.8rem,5vw,1.8rem);
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+
+    button {
+        border: 0;
+        background-color: transparent;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+img {
+    width: 25px;
+    height: 25px;
+}
+}
+
+.balance-box {
+    display:flex;
+    align-items: center;
+}
+
+.gamemodes {
+    height: 6vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: $secondary-color;
+    align-items: center;
+
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.content-box {
+    display: flex;
+    height: calc(86vh - 2px);
+}
+
+.winners {
+    width: 10vw;
+    height: 100%;
+    overflow-y: auto;
+    
+    min-width: 200px;
+    background-color: $secondary-color;
+
+
+    
+    
+}
+
+.winners::-webkit-scrollbar {
+    display: none;
+    
+}
+
+
+
+.winners-title {
+    margin: auto;
+    text-align: center;
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.winners-margin {
+    margin: 0 10%;
+}
+
+.win-box {
+position: relative;
+display: flex;
+flex-direction: column;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 15px;
+    }
+}
+
+.username {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.status {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.skin-name {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+
+.main-content {
+    width: 90vw;
+    overflow-y: auto;
+    
+    background-image: url(./svg.png);
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 120px;
+}
+
+.main-content-margin {
+    margin: 0 5%;
+}
+
+.first-container {
+   
+    margin-top: 1%;
+   
+}
+
+.second-container {
+    margin-top: 1%;
+}
+
+.tit {display: flex;
+    padding: 20px 0;
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+    }
+}
+
+.box-container {
+ background-color: $secondary-color;
+ width: 100%;
+ min-height: 30vh;
+
+
+ 
+}
+
+.subtitle {
+    display: flex;
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+
+
+.case {
+    min-width: 300px;
+}
+
+.cases {display: flex;
+overflow-x: auto;}
+
+.imgbox {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media  screen and (max-width:750px) {
+    .header-mid {
+        display: none;
+    }
+    
+    .winners {
+        display: none;
+    }
+
+    .main-content {
+        width: 100vw;
+    }
+}

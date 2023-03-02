@@ -1,0 +1,250 @@
+$base-color:rgba(36, 34, 43, 1);
+$secondary-color:rgba(22, 25, 29, 1);
+$third-color:rgb(17, 17, 20);
+$gradient-color1:linear-gradient(90deg, rgba(92,9,121,1) 0%, rgba(0,255,175,1) 100%);
+$gradient-color2:linear-gradient(90deg, rgba(128,0,255,1) 0%, rgba(0,255,106,1) 100%);
+$gradient-color3:linear-gradient(90deg, rgba(214,0,255,1) 0%, rgba(0,255,106,1) 100%);
+$gradient-color4:linear-gradient(150deg, rgba(170, 31, 255, 1) 20%,rgb(0, 252, 84) 85%);
+$font:'Oswald', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(36, 34, 43, 1);
+        font-family: $font;
+        
+
+       
+}
+
+html{
+    
+    
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+a:visited, a:hover, a:focus {
+    text-decoration: none;}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    background-color:$third-color;
+    height: 8vh;
+
+}
+
+
+hr {
+    background: $gradient-color1;
+    height: 2px;
+    border: 0;
+}
+
+.header-border {
+    display: flex;
+    margin: auto;
+    margin: 0 2% ;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    gap: 10px;
+
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.header-mid {
+    display: flex;
+    justify-content: space-between;
+gap: 40px;
+    
+}
+
+.CSGO {
+    font-size: clamp(0.8rem,5vw,1.8rem);
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+
+    button {
+        border: 0;
+        background-color: transparent;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+img {
+    width: 25px;
+    height: 25px;
+}
+}
+
+.balance-box {
+    display:flex;
+    align-items: center;
+}
+
+.content {
+    height: 91vh;
+    display: flex;
+}
+
+.title {display: flex;
+font-size: 25px;
+    h3 {
+    background:$gradient-color4 center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+.loginbox {
+    width: 350px;
+    height: 500px;
+    background-color: $third-color;
+    margin: auto;
+    padding: 25px;
+    
+}
+
+
+
+
+fieldset {
+    border: none;
+    
+}
+
+fieldset:focus-within {
+    color:$gradient-color1;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+legend {
+    background:$gradient-color4 center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+}
+
+.socials {display: flex;
+    gap: 3px;
+   .facebook {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background-color: rgb(0, 68, 255);
+       border: 0;
+       padding: 10px;
+       width: 100%;
+       border-radius: 3px;
+   }
+   .google {
+    background-color: rgb(255, 0, 0);
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.steam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 62, 117);
+    border: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+}
+
+
+.submit {
+    border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: $base-color;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #8203bd,#3bfc3b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  width: 100%;
+  margin: 40px 0;
+  box-shadow: 2px 1000px 1px $third-color inset;
+   h3 {
+    background:$gradient-color4 center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $font;
+   }
+}
+
+.socialstitle {
+    display: flex;
+    margin:20px 0;
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+.forgot {margin-top: 10px;
+    display: flex;
+    h3 {
+        background:$gradient-color4 center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 17px;
+    }
+}
+
+
+@media  screen and (max-width:750px) {
+    .header-mid {
+        display: none;
+    }
+    
+   
+}

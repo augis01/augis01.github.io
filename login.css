@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(36, 34, 43);
+  font-family: "Oswald", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:visited, a:hover, a:focus {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  background-color: rgb(17, 17, 20);
+  height: 8vh;
+}
+
+hr {
+  background: linear-gradient(90deg, rgb(92, 9, 121) 0%, rgb(0, 255, 175) 100%);
+  height: 2px;
+  border: 0;
+}
+
+.header-border {
+  display: flex;
+  margin: auto;
+  margin: 0 2%;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  gap: 10px;
+}
+.header-border h3 {
+  background: linear-gradient(150deg, rgb(170, 31, 255) 20%, rgb(0, 252, 84) 85%) center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-mid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.CSGO {
+  font-size: clamp(0.8rem, 5vw, 1.8rem);
+}
+
+.header-right {
+  display: flex;
+  gap: 30px;
+}
+.header-right button {
+  border: 0;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.header-right img {
+  width: 25px;
+  height: 25px;
+}
+
+.balance-box {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  height: 91vh;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  font-size: 25px;
+}
+.title h3 {
+  background: linear-gradient(150deg, rgb(170, 31, 255) 20%, rgb(0, 252, 84) 85%) center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loginbox {
+  width: 350px;
+  height: 500px;
+  background-color: rgb(17, 17, 20);
+  margin: auto;
+  padding: 25px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset:focus-within {
+  color: linear-gradient(90deg, rgb(92, 9, 121) 0%, rgb(0, 255, 175) 100%);
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+legend {
+  background: linear-gradient(150deg, rgb(170, 31, 255) 20%, rgb(0, 252, 84) 85%) center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+}
+
+.socials {
+  display: flex;
+  gap: 3px;
+}
+.socials .facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 68, 255);
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+}
+.socials .google {
+  background-color: rgb(255, 0, 0);
+  border: 0;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials .steam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(32, 62, 117);
+  border: 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.submit {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: "Avenir Next";
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  color: rgb(36, 34, 43);
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #8203bd, #3bfc3b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  width: 100%;
+  margin: 40px 0;
+  box-shadow: 2px 1000px 1px rgb(17, 17, 20) inset;
+}
+.submit h3 {
+  background: linear-gradient(150deg, rgb(170, 31, 255) 20%, rgb(0, 252, 84) 85%) center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oswald", sans-serif;
+}
+
+.socialstitle {
+  display: flex;
+  margin: 20px 0;
+}
+.socialstitle h3 {
+  background: linear-gradient(150deg, rgb(170, 31, 255) 20%, rgb(0, 252, 84) 85%) center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.forgot {
+  margin-top: 10px;
+  display: flex;
+}
+.forgot h3 {
+  background: linear-gradient(150deg, rgb(170, 31, 255) 20%, rgb(0, 252, 84) 85%) center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 750px) {
+  .header-mid {
+    display: none;
+  }
+}/*# sourceMappingURL=login.css.map */
