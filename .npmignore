@@ -1,0 +1,60 @@
+#################
+## Misc
+#################
+**/.DS_Store
+nbproject
+manifest.mf
+build.xml
+node_modules/*
+npm-debug.log
+coverage
+typings
+typings.json
+**/*.ts
+**/*.html
+!*.d.ts
+!src/*.d.ts
+!tests/*.d.ts
+.travis.yml
+tsconfig.json
+/public
+/e2e
+/config
+/tmp
+/typings
+.editorconfig
+.npmignore
+angular-cli-build.js
+tslint.json
+/src/favicon.ico
+/src/index.html
+/src/system-config.d.ts
+/src/system-config.js
+/src/typings.d.ts
+/src/system-config.*
+
+#################
+## JetBrains
+#################
+.idea
+.project
+.settings
+.idea/*
+*.iml
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+# Mac crap
+.DS_Store
