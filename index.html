@@ -1,283 +1,101 @@
-<!-- Copyright (c) 2015 Jordan Turley, CSGO Win Big. All Rights Reserved. -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CSGO Win Big</title>
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from csgoempire.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2023 21:18:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="cdn-cgi/apps/head/dMTSkNldgxu6Fp4QwgDj9lJfvQQ.js"></script><link rel="preload" href="fonts/FlamaBasic-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/FlamaSemibold-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/FlamaMedium-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/FlamaCondensedBold-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="icons/logo-preloader.svg" as="image" type="image/svg+xml"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-iconae52.png?v=5"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32ae52.png?v=5"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16ae52.png?v=5"><link rel="manifest" href="siteae52.webmanifest?v=5"><link rel="mask-icon" href="icons/safari-pinned-tabae52.svg?v=5" color="#c39714"><link rel="shortcut icon" href="icons/faviconae52.ico?v=5"><link rel="canonical" href="index.html"><meta name="msapplication-TileColor" content="#ffc40d"><meta name="theme-color" content="#ffffff"><script src="../www.google.com/recaptcha/api05cd.js?onload=vueRecaptchaApiLoaded&amp;render=explicit" async defer></script><script src="../d86bd89c-f627-4e38-8144-b1c3c8b4745a.snippet.antillephone.com/apg-seal.js" async></script><script>window.XCM_SEAL_ID=(function() {
+          const fallback='dropcs.me';
+          const w=window;
+          const h=w.location.hostname;
+          const sealId=seals[h] || seals[fallback];
+          if(seals[fallback] === sealId && h !== fallback && (h.includes('localhost') || (h.split(".").length - 1) > 1)) return null;
+          const o=document;
+          const a=o.getElementsByTagName('head')[0];
+          const r=o.createElement('script');
+          r.async=1;
+          r.src='https://'+sealId+'.seals-xcm.certria.com/xcm-seal.js';
+          a.appendChild(r);  
+          return sealId;
+        }());
 
-	<!-- jQuery -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
-	<!-- Bootstrap -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1705336,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script><script src="../cdn.seondf.com/js/v4/agent.js" async></script><link href="css/app.976712c2.css" rel="preload" as="style"><link href="css/chunk-vendors.17303c2e.css" rel="preload" as="style"><link href="js/app.252b5e58.js" rel="preload" as="script"><link href="js/chunk-vendors.3de68a76.js" rel="preload" as="script"><link href="css/chunk-vendors.17303c2e.css" rel="stylesheet"><link href="css/app.976712c2.css" rel="stylesheet"><title>CSGOEmpire | The most trusted CSGO Skin Gambling Site</title><meta name="description" content="Play Roulette, Coinflip & Matchbetting on the World's biggest CSGO Skin gambling site. 0% fees on skin deposits and withdrawals."><meta name="og:description" content="Play Roulette, Coinflip & Matchbetting on the World's biggest CSGO Skin gambling site. 0% fees on skin deposits and withdrawals."></head><body><noscript><div style="color:#E1B23F; font-family: sans-serif; padding: 20px; text-align: center;">We're sorry but the site doesn't work properly without JavaScript enabled. Please enable it to continue.</div></noscript><div id="app"></div><style>.preloader__container {
+        background: #141419;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+      }
 
-	<!-- SweetAlert -->
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.0.1/sweetalert.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/sweetalert/1.0.1/sweetalert.min.js"></script>
+      #preloader {
+        transition: opacity 300ms ease-in-out;
+      }
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      #preloader.preloader__loaded {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 300ms ease-in-out;
+      }
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
-</head>
-<body>
-	<div class="navbar navbar-default navbar-static-top">
-		<div class="container">
-			<a href="/" class="navbar-brand">
-				<img src="images/logo-black.png" style="height: 100%;">
-			</a>
+      .preloader__item {
+        box-sizing: border-box;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        position: relative;
+      }
 
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
+      .preloader__spinner {
+        box-sizing: content-box;
+        transform: translateZ(0) rotate(0deg);
+        border: 3px solid #E9B10B;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        animation: dice-spinner 950ms infinite linear;
+      }
 
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="http://steamcommunity.com/groups/csgo_win_big" title="Join our Steam group!" target="_blank">
-							<img src="images/steam.png" style="width: 30px;">
-						</a>
-					</li>
-					<li style="margin-right: 10px;">
-						<a href="http://twitter.com/csgowinbig" title="Follow us on Twitter!" target="_blank">
-							<img src="images/twitter.png" style="width: 30px;">
-						</a>
-					</li>
-					<li id="loading-menubar">
-						<a>loading&hellip;</a>
-					</li>
-					<li class="login" style="display: none;">
-						<a href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=http%3A%2F%2Fwww.csgowinbig.com%2Fphp%2Fsteam-login-handle.php&openid.realm=http%3A%2F%2Fwww.csgowinbig.com&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select">
-							<img src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png">
-						</a>
-					</li>
-					<li class="logout" style="display: none;">
-						<p class="navbar-btn" style="margin-right: 10px;">
-							<a href="php/SteamAuthentication/steamauth/logout.php" class="btn btn-danger">Logout</a>
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+      @media screen and (min-width: 768px) {
+        .preloader__item {
+          width: 200px;
+          height: 200px;
+          padding: 20px;
+        }
 
-	<!-- Sound effects -->
-	<div>
-		<audio src="sounds/gun-sound.mp3" id="gun-sound"></audio>
-	</div>
+        .preloader__spinner {
+          border: 5px solid #E9B10B;
+          border-top-color: transparent;
+          border-left-color: transparent;
+          top: -5px;
+          left: -5px;
+        }
+      }
 
-	<!-- <h1>NOTE: The site is undergoing maintenance. Please bear with us.</h1> -->
+      @keyframes dice-spinner {
+        to {
+          transform: translateZ(0) rotate(360deg);
+        }
+      }
 
-	<div class="container" id="main-container">
-		<div class="row main-row">
-			<div class="col-sm-3">
-				<div style="padding-top: 10px; margin-bottom: 20px;">
-					<div id="topleft-menu">Menu</div>
-					<div class="topleft-link-wrapper logout" style="display: none;">
-						<button class="topleft-link btn btn-primary btn-block" id="change-trade-url-btn"><span class="glyphicon glyphicon-pencil"></span> Change Trade URL</button>
-					</div>
-					<div class="topleft-link-wrapper">
-						<button class="topleft-link btn btn-info btn-block" data-toggle="modal" data-target="#about-modal"><span class="glyphicon glyphicon-list-alt"></span> About/How it Works</button>
-					</div>
-					<div class="topleft-link-wrapper">
-						<button class="topleft-link btn btn-warning btn-block" id="support-btn"><span class="glyphicon glyphicon-question-sign"></span> Support</button>
-					</div>
-					<div class="topleft-link-wrapper">
-						<button class="topleft-link btn btn-default btn-block" id="donate-btn"><span class="glyphicon glyphicon-usd"></span> Donate</button>
-					</div>
-					<div class="topleft-link-wrapper">
-						<button class="topleft-link btn btn-success btn-block" id="history-btn"><span class="glyphicon glyphicon-list"></span> History</button>
-					</div>
-				</div>
-				<div class="bg" style="text-align: center; margin-bottom: 20px;">
-					<h4 style="padding: 0px; margin: 10px 0px;">Previous winner:</h4>
-					<img src="" id="prev-winner-pic" style="width: 150px; height: 150px; border-radius: 5px;">
-					<br>
-					<h4 id="prev-winner-name" style="margin-bottom: "></h4>
-					<h4>
-						Win: <span id="prev-winner-amnt"></span>
-						<br>
-						Chance: <span id="prev-winner-chance"></span>
-					</h4>
-				</div>
-				<div class="bg" style="margin-bottom: 20px;">
-					<div id="chatbox">
-						<div id="chatmessages">Loading chat, please wait&hellip;</div>
-					</div>
-					<input id="chat-input" style="width: 100%; display: none;" placeholder="Send message (press 'Enter' to send)">
-				</div>
-			</div>
-			<div class="col-sm-9">
-				<h2 class="bg" style="padding: 10px; padding-bottom: 0px; margin-top: 10px; margin-bottom: 20px; height: 100%;">
-					As many of you know, Steam has now added a requirement for mobile confirmations when sending trades. So, CSGO Win Big will be down for a couple days, while we edit the bot for this. But, we will be back up soon!
-					<hr>
-					Welcome to <span style="font-weight: bold; /* color: yellow; */">CSGO Win Big</span>! Try your luck and deposit items, and see if you can win big! Good luck and have fun!
-					<br><br>
-					<a href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=http%3A%2F%2Fwww.csgowinbig.com%2Fphp%2Fsteam-login-handle.php&openid.realm=http%3A%2F%2Fwww.csgowinbig.com&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select" class="btn btn-lg btn-success" id="login-main" style="display: none; margin-bottom: 10px;">
-						<img src="images/steam-logo.png" style="height: 1em;"> Login for your chance to win!
-					</a>
-					<button class="btn btn-lg btn-block btn-success deposit-btn" id="deposit-main" style="display: none; margin-bottom: 10px;">
-						<img src="images/steam-logo.png" style="height: 1em;"> Deposit skins for your chance to win!
-					</button>
-				</h2>
-				<div style="width: 100%; margin-bottom: 20px;">
-					<table style="width: 100%">
-						<tr>
-							<td style="width: 25%; padding-left: 0px; padding-right: 5px;">
-								<div class="bg" style="padding: 15px; font-size: 18px;">
-									Minimum Deposit:
-									<br>
-									<div class="info">$0.20</div>
-								</div>
-							</td>
-							<td style="width: 25%; padding-left: 5px; padding-right: 5px;">
-								<div class="bg" style="padding: 15px; font-size: 18px;">
-									Total Games Played:
-									<br>
-									<div class="info" id="total-games-played">&hellip;</div>
-								</div>
-							</td>
-							<td style="width: 25%; padding-left: 5px; padding-right: 5px;">
-								<div class="bg" style="padding: 15px; font-size: 18px;">
-									Total Money Won:
-									<br>
-									<div class="info" id="total-money-won">&hellip;</div>
-								</div>
-							</td>
-							<td style="width: 25%; padding-left: 5px; padding-right: 0px;">
-								<div class="bg" style="padding: 15px; font-size: 18px;">
-									Biggest Pot Ever:
-									<br>
-									<div class="info" id="biggest-pot-ever">&hellip;</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="bg" style="padding: 5px; margin-bottom: 20px;">
-					<div id="pot-items-price" style="display: none; position: relative;">
-						<div class="row">
-							<div class="col-sm-4">
-								<canvas id="items-canvas" width="250" height="250"></canvas>
-								<br>
-								<table cellpadding="0" style="position: absolute; text-align: center; vertical-align: middle; width: 250px; height: 250px; top: 0px; font-size: 35px;">
-									<tr>
-										<td style="padding: 0px;">
-											<span id="pot-items"></span>/60
-											<br>
-											<span id="pot-price"></span>
-											<br>
-											<span id="time-left"></span>
-										</td>
-									</tr>
-								</table>
-							</div>
-							<div class="col-sm-7" style="height: 250px; overflow-x: auto; margin-left: 20px;">
-								<h3 style="text-align: center; margin: 0px; margin-bottom: 5px;">Players:</h3>
-								<table id="users-deposited-table" style="width: 100%;"></table>
-							</div>
-						</div>
-						<hr style="border-top: 1px solid #777;">
-					</div>
-					<div id="pot">&nbsp;loading&hellip;</div>
-				</div>
-			</div>
-		</div>
-	<div class="modal fade" id="about-modal" role="dialog" tabindex="-1">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4>About CSGO Win Big</h4>
-				</div>
-				<div class="modal-body">
-					CSGO Win Big is a new Counter-Strike: Global Offensive jackpot-style betting website that is fully open source. You can view the source code for the website <a href="https://github.com/ztizzlegaming/CSGOWinBig" target="_blank">here</a>, and view the source code for the Steam Bot that handles deposits and payouts <a href="https://github.com/ztizzlegaming/CSGOWinBig-SteamBot" target="_blank">here</a>. This website was created by, developed, and is run by Jordan Turley. If you have any questions about this website, email me at <a href="mailto:support@csgowinbig.com">support@csgowinbig.com</a>. And of course, good luck!
-
-					<hr>
-
-					Item prices:
-					<br>
-					Item prices are gotten from our database, which you can view <a href="prices.html">here</a>. If you find that a price for an item is incorrect, then you can submit a 'Price Change Ticket' there, and we will look into it. If for some reason an item cannot be found in our database, you can submit a 'New Item Ticket', and we will add the item as soon as possible. Until we add the item, the Steam community market will be used for pricing of these items.
-
-					<hr>
-
-					What sets us apart from other betting websites:
-					<ul>
-						<li>
-							Low minimum bet
-							<ul>
-								<li>
-									The minimum bet is only $0.20, in comparison to $2 and $3 from similar sites; low enough that anyone can participate, but high enough that the pot doesn't fill up with 4 cent skins.
-								</li>
-							</ul>
-						</li>
-						<li>
-							Only 2% cut taken by website
-							<ul>
-								<li>
-									This site will only take about a 2% cut, and will never take more than 5%. Similar sites take as much as 5% and no more than 10%.
-								</li>
-							</ul>
-						</li>
-						<li>
-							Open Source
-							<ul>
-								<li>
-									CSGO Win Big is fully open source. All of the code for both <a href="https://github.com/ztizzlegaming/CSGOWinBig" target="_link">the website</a> and <a href="https://github.com/ztizzlegaming/CSGOWinBig-SteamBot" target="_blank">the Steam bot</a> can be viewed on Github.
-								</li>
-							</ul>
-						</li>
-						<li>
-							Not a Scam
-							<ul>
-								<li>
-									These days, there are so many people trying to scam you. However, that is not me. This site is 100% legitimate; the source code for the website and the bot is public, and can be viewed by anyone.
-								</li>
-							</ul>
-						</li>
-					</ul>
-
-					<hr>
-
-					The way it works is simple:
-					<ol>
-						<li>Deposit your skins by clicking the button in the top right</li>
-						<li>Your tickets will be calculated. For example, if you deposit $1 of skins, you get 100 tickets; $10 gets you 1000 tickets. 1 cent is 1 ticket.</li>
-						<li>When the pot reaches 60 skins, a winner will be randomly chosen, and ~98% of the skins will be send to you in a trade offer (Learn more about this in 'Rules and other information' below).</li>
-					</ol>
-
-					<hr>
-
-					"Why was my trade offer declined?" Your trade offer may have been declined because:
-					<ul>
-						<li>Your inventory is set to private.</li>
-						<li>Your offer didn't meet the minimum bet of $0.20.</li>
-						<li>Your offer was not a gift (you tried to get items from the bot instead of just giving).</li>
-						<li>Your offer contained more than the 10 item limit.</li>
-						<li>One or more of the items in your offer was not for CS: GO.</li>
-					</ul>
-
-					<hr>
-
-					Rules and other information:
-					<ul>
-						<li>The pot can be a bit larger than 60 skins, depending on how many skins are in the last deposit.</li>
-						<li>The site will keep about 2% of the skins in every pot, but no more than 5%. The amount taken will be as close to 2% as it can be, depending on the items in the pot, but will never be more than 5%. This is so that the staff of CSGO Win Big can keep the site running as best as it can, without having any annoying ads on the site.</li>
-						<li>If you experience any lost items, such as depositing an item but not seeing it in the pot, or winning a pot but not receiving a trade offer, please submit a <a href="support.html">support ticket</a> and we will get back to you as soon as possible.</li>
-					</ul>
-
-					<hr>
-
-					Copyright &copy; 2015 Jordan Turley, CSGO Win Big. All Rights Reserved. Background image is from Steam, and can be found <a href="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/730/955e56085e78606ce8b56d7d912e2cd738af4215.png">here</a>.
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
+      .preloader__logo {
+        height: 100%;
+        width: 100%;
+      }</style><div id="preloader" class="preloader__container"><div class="preloader__item"><div class="preloader__spinner"></div><img class="preloader__logo" src="icons/logo-preloader.svg" alt=""></div></div><script src="js/chunk-vendors.3de68a76.js"></script><script src="js/app.252b5e58.js"></script><script>(function(){var js = "window['__CF$cv$params']={r:'7a24e8f7ed82bc0d',m:'lBwGUHAHAhsJe41D6WZCzBdlQwf_RZo7au84WvjHCu0-1677878286-0-AY/oJv0sqAmQ/fvb+lhaXxwV8ESEdpViqPCjqv5hSDmdhmtEu1ns2xni3YIqyx3Z1jOaPnEDsMP82WVcm8qFAWUJ5D6hMnBQKGIZmsdLRtPr40LrxWJrZfDgm/Ilbt2t0Q==',s:[0x9e986578af,0x4904bfd77b],u:'/cdn-cgi/challenge-platform/h/g'};var _cpo=document.createElement('script');_cpo.nonce='',_cpo.src='cdn-cgi/challenge-platform/h/g/scripts/cb/invisible7fb6.js?cb=7a24e8f7ed82bc0d',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a24e8f7ed82bc0d","token":"648473a15d734d829b711f94b32101e1","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
 </body>
+<!-- Mirrored from dropcs.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2023 21:18:11 GMT -->
 </html>
